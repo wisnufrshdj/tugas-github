@@ -1,0 +1,15 @@
+login = 3
+print("Silahkan Login\n")
+while login > 0:
+    username = input("Username : ")
+    password = input("Password : ")
+
+    if username == "loginUTS" and password == "rpl2024":
+        print("\nSelamat datang di aplikasi prodi RPL")
+        break
+    else:
+        login -= 1
+        if login > 0:
+            print("\nLogin Salah! Kesempatan Anda",login,"x kali lagi\n")
+        else:
+            print("\nAnda tidak diperkenankan mengakses aplikasi ini.")
